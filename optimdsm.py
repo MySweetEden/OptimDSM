@@ -3,13 +3,6 @@ import scip
 
 def create_matrix(size=10):
     matrix = np.random.randint(0, 2, size=(size, size))
-    # matrix = np.array(
-    #     [[0,1,100,0,0],
-    #     [0,0,0,10,10],
-    #     [0,0,0,0,0],
-    #     [1,0,1,0,0],
-    #     [1,0,0,1,0]]
-    # )
     return matrix
 
 def sequence(matrix):
