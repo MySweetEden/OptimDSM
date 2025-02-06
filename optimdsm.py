@@ -72,7 +72,7 @@ def optimize(matrix, strategy=None, technique=None):
         ("sequencing", "heuristic"): sa_sequence,
         ("clustering", "heuristic"): sa_cluster,
     }
-    if strategy == None or technique == None:
+    if strategy is None or technique is None:
         return matrix
     return algorithm.get((strategy, technique))(matrix)
 
